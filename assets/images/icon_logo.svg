@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <g fill="none" stroke="#FFDB6E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Stylized "d" -->
-    <path d="M24,16 C16,16 16,48 24,48 C32,48 32,32 24,32 L16,32" />
-    
-    <!-- Stylized "p" -->
-    <path d="M40,16 L40,48 C40,56 48,56 48,48 L48,32 C48,24 40,24 40,32 L56,32" />
-  </g>
+  <!-- Yellow Circle -->
+  <circle cx="32" cy="32" r="32" fill="#FFD700" />
+
+  <!-- Etched "d" -->
+  <text x="16" y="42" font-family="Arial, sans-serif" font-size="28" fill="white" font-weight="bold">d</text>
+
+  <!-- Etched "p" -->
+  <text x="32" y="42" font-family="Arial, sans-serif" font-size="28" fill="white" font-weight="bold">p</text>
 </svg>
