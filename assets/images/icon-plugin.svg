@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <g fill="none" stroke="#FFDB6E" stroke-width="2">
+    <!-- Outer Circle (Represents Unreal Engine) -->
+    <circle cx="32" cy="32" r="16" stroke-linejoin="round"/>
+    
+    <!-- Electric Plug Body -->
+    <rect x="26" y="26" width="12" height="18" rx="2" ry="2" stroke-linejoin="round"/>
+    
+    <!-- Plug Prongs -->
+    <line x1="30" y1="44" x2="30" y2="52" stroke-linecap="round"/>
+    <line x1="34" y1="44" x2="34" y2="52" stroke-linecap="round"/>
+    
+    <!-- Plug Cord -->
+    <path d="M28,26 C24,20 24,14 32,10" stroke-linecap="round"/>
+  </g>
+</svg>

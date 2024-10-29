@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <g fill="none" stroke="#FFDB6E" stroke-width="2">
+    <!-- Mobile Phone Outline -->
+    <rect x="20" y="8" width="24" height="48" rx="4" ry="4" />
+    <path d="M20,8 L16,4 C15,3 14,3 13,4 L11,6 C10,7 10,8 11,9 L15,13" />
+    <path d="M44,8 L48,4 C49,3 50,3 51,4 L53,6 C54,7 54,8 53,9 L49,13" />
+    
+    <!-- Screen Content -->
+    <rect x="22" y="12" width="20" height="36" fill="#FFD700" opacity="0.2" />
+    
+    <!-- Home Button -->
+    <circle cx="32" cy="50" r="2" />
+  </g>
+</svg>
