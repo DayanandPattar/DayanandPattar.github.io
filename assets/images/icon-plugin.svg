@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <g fill="none" stroke="#FFDB6E" stroke-width="2">
+  <g fill="none" stroke="#0070E0FF" stroke-width="2">
     <!-- Outer Circle (Represents Unreal Engine) -->
     <circle cx="32" cy="32" r="16" stroke-linejoin="round"/>
     

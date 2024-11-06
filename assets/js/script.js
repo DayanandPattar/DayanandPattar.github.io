@@ -49,9 +49,11 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 // }
 
+
 // add click event to modal close button
 // modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 // overlay.addEventListener("click", testimonialsModalFunc);
+
 
 
 
@@ -185,3 +187,49 @@ form.addEventListener("submit", function (e) {
       alert("Failed to send message. Please try again.");
     });
 });
+
+
+
+
+// Portfolio modal variables
+const portfolioItems = document.querySelectorAll("[data-portfolio-item]");
+const portfolioModalContainer = document.querySelector("[data-portfolio-modal]");
+const portfolioOverlay = document.querySelector("[data-portfolio-overlay]");
+const modalCloseBtn = portfolioModalContainer.querySelector("[data-modal-close-btn]");
+
+const modalProjectImg = document.querySelector("[data-modal-project-img]");
+const modalProjectTitle = document.querySelector("[data-modal-project-title]");
+//const modalProjectCategory = document.querySelector("[data-modal-project-category]");
+const modalDescription = document.querySelector("[data-modal-description]");
+
+// Function to toggle the modal visibility
+const togglePortfolioModal = () => {
+  portfolioModalContainer.classList.toggle("active");
+  portfolioOverlay.classList.toggle("active");
+};
+
+// Add click event to each eye icon to open the modal with portfolio details
+portfolioItems.forEach((item) => {
+  const eyeIcon = item.querySelector("[data-eye-icon]");
+
+  eyeIcon.addEventListener("click", () => {
+    // Get data from the clicked item’s attributes
+    const projectImgSrc = item.getAttribute("data-img-src");
+    const projectTitle = item.getAttribute("data-title");
+    const projectCategory = item.getAttribute("data-category");
+    const projectDescription = item.getAttribute("data-description");
+
+    // Update modal content
+    modalProjectImg.src = projectImgSrc;
+    modalProjectImg.alt = projectTitle;
+    modalProjectTitle.innerText = projectTitle;
+    //modalProjectCategory.innerText = projectCategory;
+    modalDescription.innerHTML = `<p>${projectDescription}</p>`;
+
+    togglePortfolioModal();
+  });
+});
+
+// Close modal when close button or overlay is clicked
+modalCloseBtn.addEventListener("click", togglePortfolioModal);
+portfolioOverlay.addEventListener("click", togglePortfolioModal);
